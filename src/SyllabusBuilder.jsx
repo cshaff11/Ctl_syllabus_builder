@@ -547,7 +547,7 @@ export default function SyllabusBuilder() {
           {tab === 3 && (<>
             <H>Learning Outcomes</H>
             <label className="flex items-start gap-2 mb-4 text-sm" style={{ color: C.slate, cursor: "pointer" }}>
-              <input type="checkbo" checked={d.showPrimer} onChange={(e) => set("showPrimer", e.target.checked)} style={{ marginTop: 3 }} />
+              <input type="checkbox" checked={d.showPrimer} onChange={(e) => set("showPrimer", e.target.checked)} style={{ marginTop: 3 }} />
               <span>Include the explainer box in the exported document. It tells a new faculty member what an SLO is, how to test one, and why the Gen Ed outcomes belong here. Uncheck it, or delete the box in Word, once your outcomes are written.</span>
             </label>
             {d.outcomes.map((o, i) => (
